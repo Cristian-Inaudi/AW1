@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/logo.png" type="image/png">
+    <title>LG Store - Estilo de Campo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #f2e2c4;
+            font-family: 'Georgia', serif;
+            margin: 0;
+        }
+        .navbar, .footer {
+            background-color: #3e4d3a;
+        }
+        .footer {
+            padding: 5px 0;
+            text-align: center;
+            color: white;
+        }
+        .navbar-brand, .nav-link, .footer p {
+            color: #fff !important;
+            font-family: 'Playfair Display', serif;
+        }
+        .nav-link:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+            text-decoration: underline;
+            transition: background-color 0.3s ease, text-decoration 0.3s ease;
+        }
+        .nav-link i:hover {
+            color: #d4b59e;
+        }
+        .btn-custom {
+            background-color: #7c2d2d;
+            color: #fff;
+        }
+        .btn-custom:hover {
+            background-color: #5a1f1f;
+        }
+        .main-content {
+            flex: 1;
+            min-height: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+        .card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: none;
+            background-color: #eae6df;
+        }
+
+        .card-img-top {
+            max-height: 250px;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .card:hover .card-img-top {
+            filter: brightness(1.1);
+        }
+
+        .card-title a {
+            color: #3a3a3a;
+            transition: color 0.3s ease;
+            text-decoration: none;
+        }
+
+        .card-title a:hover {
+            color: #8b5e3c;
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+<div class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand d-flex align-items-center" href="index.html" style="margin-right: 20px;">
+              <img src="assets/logo.png" alt="LG Store Logo" style="width: 50px; height: auto; margin-right: 15px; border-radius: 10px;">
+              LG Store
+            </a>      
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto fs-5">
+              <li class="nav-item px-3"><a class="nav-link" href="productos_regionales.html">Productos Regionales</a></li>
+              <li class="nav-item px-3"><a class="nav-link" href="bijou_accesorios.html">Bijouterie</a></li>
+              <li class="nav-item px-3"><a class="nav-link" href="ropa_campo.html">Ropa de Campo</a></li>
+            </ul>
+            <ul class="navbar-nav ms-auto fs-5">
+                <li class="nav-item px-3">
+                    <a class="nav-link" href="login.html" title="Cerrar sesión">
+                      <i class="bi bi-box-arrow-right"></i>
+                    </a>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+      <div class="main-content container my-4">
+      
+
+          <section class="mb-5 mt-3 text-center">
+          <h2 class="mb-3">Bienvenido a LG Store, tu tienda de productos regionales.</h2>
+          <h4 class="text-muted">A continuación, te mostramos las distintas categorías de nuestra carta:</h4>
+          </section>
+      
+
+          <section class="d-flex flex-wrap justify-content-center gap-4">
+
+          <article class="card" style="width: 20rem;">
+            <a href="./productos_regionales.html">
+              <img src="assets/productos_regionales.png" class="card-img-top" alt="Productos Regionales">
+              <div class="card-body text-center">
+              <h5 class="card-title">
+                Productos Regionales</a>
+              </h5>
+              </div>
+          </article>
+      
+ 
+          <article class="card" style="width: 20rem;">
+            <a href="./bijou_accesorios.html">
+              <img src="assets/bijou.png" class="card-img-top" alt="Bijou - Accesorios">
+              <div class="card-body text-center">
+              <h5 class="card-title">
+              Bijou - Accesorios</a>
+              </h5>
+              </div>
+          </article>
+      
+          <article class="card" style="width: 20rem;">
+            <a href="./ropa_campo.html">
+              <img src="assets/ropa_campo.png" class="card-img-top" alt="Ropa de Campo">
+              <div class="card-body text-center">
+              <h5 class="card-title">
+                Ropa de Campo</a>
+              </h5>
+              </div>
+          </article>
+          </section>
+      
+      </div>
+      
+      <div class="footer">
+          <p>&copy; 2025 LG Store - Tienda Regional. Todos los derechos reservados.</p>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</div>
+  
+</body>
+      
+</html>
