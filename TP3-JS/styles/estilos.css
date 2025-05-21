@@ -1,0 +1,211 @@
+/* Global Reset */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Georgia', serif;
+  display: flex;
+  flex-direction: column;
+  background-color: #f2e2c4;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+/* Navbar y Footer */
+.navbar, .footer {
+  background-color: #3e4d3a!important;
+}
+
+.navbar-brand, .nav-link, .footer p {
+  color: #fff !important;
+  font-family: 'Playfair Display', serif;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  text-decoration: underline;
+  transition: background-color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.nav-link i:hover {
+  color: #d4b59e;
+}
+
+.footer {
+  padding: 10px 0;
+  text-align: center;
+  margin-top: auto;
+  width: 100%;
+  color: white;
+  font-size: medium;
+}
+
+/* Botones */
+.btn-custom {
+  background-color: #7c2d2d;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-family: 'Playfair Display', serif;
+  font-size: 0.85rem;
+}
+
+.btn-custom:hover {
+  background-color: #5a1f1f;
+}
+
+/* Contenido principal */
+.main-content {
+  flex: 1;
+  overflow-y: auto;
+  margin: 10px auto;
+  text-align: center;
+  width: 100%;
+}
+
+.extra-space {
+  margin-bottom: 5rem!important;
+}
+
+/* Tarjetas de producto */
+.product-card, .card {
+  background-color: #eae6df;
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 15px;
+  flex: 1 1 30%;
+}
+
+.product-card:hover, .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.product-img, .card-img-top {
+  object-fit: cover;
+  width: 100%;
+  max-height: 250px;
+}
+
+.card:hover .card-img-top {
+  filter: brightness(1.1);
+}
+
+.card a:hover .card-title {
+  color: #8b5e3c;
+  text-decoration: underline;
+}
+
+
+.card-title a {
+  color: #3a3a3a;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.card-title a:hover {
+  color: #8b5e3c;
+  text-decoration: underline;
+}
+
+.product-title {
+  font-family: 'Playfair Display', serif;
+  color: #3a3a3a;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.fw-bold.text-success.fs-5 {
+  font-size: 1rem;
+}
+
+/* Layout */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.col-md-6, .col-lg-4 {
+  flex: 1 1 30%;
+}
+
+.card-body .btn {
+  font-size: 0.9rem;
+}
+
+/* Formularios */
+.form-container {
+  max-width: 450px;
+  margin: 1.5rem auto;
+  background-color: #fff;
+  padding: 1.2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.08);
+}
+
+.form-container h1 {
+  font-size: 1.3rem;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #3e4d3a;
+}
+
+.form-label {
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+
+.form-control {
+  font-size: 0.85rem;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+/* Logo circular */
+.logo-redondo {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 4px rgba(0,0,0,0.2);
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .form-container {
+    max-width: 100%;
+    padding: 0.8rem;
+    margin: 1rem;
+  }
+
+  .form-container h1 {
+    font-size: 1rem;
+  }
+
+  .form-label, .form-control {
+    font-size: 0.8rem;
+  }
+
+  .form-control {
+    padding: 5px 8px;
+  }
+
+  .logo-redondo {
+    width: 48px;
+    height: 48px;
+  }
+
+  .btn-custom,
+  .btn-outline-secondary {
+    font-size: 0.75rem;
+    padding: 5px 10px;
+  }
+
+  header h2 {
+    font-size: 1rem;
+  }
+}
