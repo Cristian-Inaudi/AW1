@@ -1,0 +1,6 @@
+const paginas = [
+  { nombre: "Inicio", url: "index.html" },
+  { nombre: "Productos Regionales", url: "productos_regionales.html" },
+  { nombre: "Bijou & Accesorios", url: "bijou_accesorios.html" },
+  { nombre: "Ropa de Campo", url: "ropa_campo.html" }
+];
