@@ -1,5 +1,11 @@
-const productosBijou = [
-    { nombre: "Pulsera de plata", descripcion: "Elegante pulsera rústica", precio: 10000, imagen: "assets/pulsera_caballo.png" },
-    { nombre: "Hebilla cinturon", descripcion: "Hebilla tradicional", precio: 7000, imagen: "assets/hebilla_gaucho.png" },
-    { nombre: "Anillo de plata", descripcion: "Anillo de plata tradicional", precio: 8000, imagen: "assets/anillo_plata.png" }
-  ];
+document.addEventListener("DOMContentLoaded", () => {
+  fetch("data/productos.json")
+    .then(response => response.json())
+    .then(data => {
+      const bijouAccesorios = data.filter(p => p.categoria === "bijou_accesorios");
+      renderCards(bijouAccesorios, "productos-container");
+    })
+    .catch(error => {
+      console.error("Error al cargar los productos regionales:", error);
+    });
+});

@@ -27,9 +27,7 @@
 
     </main>
  
-    <div id="footer">
-      <script src="components/footer.js"></script>
-    </div>
+    <div id="footer"></div>
 
   </div>
 
@@ -46,16 +44,16 @@
     }
   </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="data/paginas.js"></script>
+
   <script src="components/navbar.js"></script>
+  <script src="components/footer.js"></script>
+  <script src="components/cards.js"></script>
+  <script src="data/productos_regionales.js"></script>
+  
   <script>
-    crearNavbar(paginas);
+    crearNavbar("data/paginas.json");
+    crearFooter();
   </script>
 
-  <script src="data/productos_regionales.js"></script>
-  <script src="components/cards.js"></script>
-  <script>
-    renderCards(productosRegionales, "productos-container");
-  </script>
 </body>
 </html>

@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "nombre": "Mermelada de Durazno",
+    "descripcion": "Deliciosa mermelada artesanal de durazno",
+    "precio": 3000,
+    "imagen": "assets/mermelada_durazno.png",
+    "categoria": "productos_regionales"
+  },
+  {
+    "id": 2,
+    "nombre": "Peperina",
+    "descripcion": "Hierba aromática tradicional",
+    "precio": 1500,
+    "imagen": "assets/peperina.png",
+    "categoria": "productos_regionales"
+  },
+  {
+    "id": 3,
+    "nombre": "Alfajores con Dulce de Leche - Docena",
+    "descripcion": "Docena de alfajores artesanales con dulce de leche",
+    "precio": 10500,
+    "imagen": "assets/alfajor_ddl.png",
+    "categoria": "productos_regionales"
+  },
+  { 
+    "id": 4,
+    "nombre": "Pulsera de plata", 
+    "descripcion": "Elegante pulsera rústica", 
+    "precio": 10000, 
+    "imagen": "assets/pulsera_caballo.png",
+    "categoria": "bijou_accesorios" 
+  },
+  { 
+    "id": 5,
+    "nombre": "Hebilla cinturon", 
+    "descripcion": "Hebilla tradicional", 
+    "precio": 7000, 
+    "imagen": "assets/hebilla_gaucho.png",
+    "categoria": "bijou_accesorios"
+  },
+  {
+    "id": 6, 
+    "nombre": "Anillo de plata", 
+    "descripcion": "Anillo de plata tradicional", 
+    "precio": 8000, 
+    "imagen": "assets/anillo_plata.png",
+    "categoria": "bijou_accesorios" 
+  },
+  {
+    "id": 7,
+    "nombre": "Bombacha de Gaucho",
+    "descripcion": "Bombacha tradicional gaucha",
+    "precio": 25000,
+    "imagen": "assets/bombacha_gaucho.png",
+    "categoria": "ropa_campo" 
+  },
+  {
+    "id": 8,
+    "nombre": "Boina de lana",
+    "descripcion": "Boina clásica de lana",
+    "precio": 15000,
+    "imagen": "assets/boina.png",
+    "categoria": "ropa_campo"
+  },
+  {
+    "id": 9,
+    "nombre": "Poncho Gaucho",
+    "descripcion": "Poncho típico gaucho, abrigo esencial",
+    "precio": 20500,
+    "imagen": "assets/poncho_gaucho.png",
+    "categoria": "ropa_campo"
+  } 
+]
