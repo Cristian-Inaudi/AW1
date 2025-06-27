@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   renderizarCarrito();
 });
 
-// Amrado de card sobre productos del carrito
+// Renderiza el carrito mostrando productos y el total general
 function renderizarCarrito() {
   const contenedor = document.getElementById("carrito-container");
   if (!contenedor) return;
@@ -20,7 +20,12 @@ function renderizarCarrito() {
 
   contenedor.innerHTML = "";
 
+  let totalGeneral = 0;
+
   carrito.forEach((producto, index) => {
+    const subtotal = producto.precio * producto.cantidad;
+    totalGeneral += subtotal;
+
     const item = document.createElement("div");
     item.className = "col-md-6 col-lg-4 mb-4";
     item.innerHTML = `
@@ -29,16 +34,24 @@ function renderizarCarrito() {
         <div class="card-body text-center">
           <h5 class="card-title">${producto.nombre}</h5>
           <p>Cantidad: ${producto.cantidad}</p>
-          <p class="fw-bold">$${(producto.precio * producto.cantidad).toLocaleString('es-AR')}</p>
+          <p class="fw-bold">Subtotal: $${subtotal.toLocaleString('es-AR')}</p>
           <button class="btn btn-danger btn-sm" onclick="eliminarProducto(${index})">Eliminar</button>
         </div>
       </div>
     `;
     contenedor.appendChild(item);
   });
+
+  // Total general al final del carrito
+  const totalDiv = document.createElement("div");
+  totalDiv.className = "col-12 mt-4 text-center";
+  totalDiv.innerHTML = `
+    <h4 class="fw-bold">Total de tu compra: $${totalGeneral.toLocaleString('es-AR')}</h4>
+  `;
+  contenedor.appendChild(totalDiv);
 }
 
-// Eliminar productos del carrito
+// Función para eliminar productos del carrito
 function eliminarProducto(indice) {
   let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
   carrito.splice(indice, 1);
@@ -46,4 +59,4 @@ function eliminarProducto(indice) {
 
   renderizarCarrito();
   actualizarCantidadCarrito();
-  }
+}
